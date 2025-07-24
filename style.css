@@ -1,0 +1,101 @@
+/* style.css */
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #000;
+  color: white;
+  overflow: hidden; /* Prevent body scroll */
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#word-display {
+  text-align: center;
+  font-size: 2em;
+  padding: 1em;
+  border-bottom: 1px solid #333;
+  background: #111;
+  /* user-select: none;  Removed to make text selectable */
+}
+
+/* Style for the link inside word-display */
+#word-display a {
+    color: #0057ff; /* Blue color for links */
+    text-decoration: none; /* No underline by default */
+    cursor: pointer; /* Indicate it's clickable */
+    transition: color 0.2s ease;
+}
+
+#word-display a:hover {
+    color: #0080ff; /* Slightly lighter blue on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+#grid-container {
+  display: flex;
+  flex: 1;
+  overflow-x: auto; /* Allow horizontal scrolling for columns */
+}
+
+#letter-rows {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  overflow-x: auto; /* Allow horizontal scrolling for letter columns */
+  overflow-y: hidden; /* Prevent vertical scrolling */
+}
+
+.letter-column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-right: 1px solid #333;
+  flex-grow: 1;
+}
+
+.letter-tile {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #444;
+  cursor: pointer;
+  background: #555; /* Default gray background */
+  color: white; /* Ensure text is visible on gray */
+  font-size: 1.2em;
+  user-select: none; /* Prevent text selection - KEEP this for tiles */
+  transition: background-color 0.1s ease; /* Smooth hover effect */
+}
+
+/* Specific styles */
+.letter-tile.selected {
+  background: #0057ff !important; /* Blue for selected */
+}
+
+.letter-tile:hover {
+  background: #777; /* Lighter gray on hover */
+}
+
+.terminal {
+  background: black !important; /* Black for terminal words */
+  color: white; /* Ensure text is visible */
+  font-weight: bold;
+}
+
+.deadend {
+  background: black !important; /* Match background for dead ends */
+  color: darkred; /* Indicate a dead end */
+  height: 100% !important;
+  flex: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: default; /* No pointer for dead ends */
+}
