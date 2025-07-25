@@ -113,10 +113,10 @@ body {
 }
 
 #color-container button {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
+  width: 15px;
+  height: 10px;
+  border-radius: 5%;
   border: none;
   cursor: pointer;
-  margin: 10px;
+  margin: 5px;
 }
