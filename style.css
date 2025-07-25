@@ -48,7 +48,7 @@ body {
   flex-direction: row;
   flex: 1;
   overflow-x: auto; /* Allow horizontal scrolling for letter columns */
-  overflow-y: hidden; /* Prevent vertical scrolling */
+  /* overflow-y: hidden; Prevent vertical scrolling */
 }
 
 .letter-column {
