@@ -22,3 +22,13 @@ Word Explorer is an interactive web application that allows users to discover an
     * You can continue to build longer words even after reaching a "terminal" (black) tile, as long as valid continuations exist.
     * If you reach a "dead end" (indicated by 'X'), there are no more words that can be formed from your current path.
 4.  **Modify Your Path:** Click on any letter in a previously selected column to change your word path from that point onwards.
+
+---
+
+The app:
+
+![app image](https://res.cloudinary.com/benjifri/image/upload/v1753413625/github/app.jpg)
+
+Google Result:
+
+![Google Result](https://res.cloudinary.com/benjifri/image/upload/v1753413626/github/google.jpg)
