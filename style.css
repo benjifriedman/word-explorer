@@ -48,6 +48,7 @@ body {
   overflow-x: auto;
   scrollbar-color: #333 #000; */
   height: 100%; 
+  border-bottom: 1px solid #333;
 }
 
 #letter-rows {
@@ -64,6 +65,7 @@ body {
   height: 100%;
   border-right: 1px solid #333;
   flex-grow: 1;
+  height: 611px;
 }
 
 .letter-tile {
@@ -78,6 +80,7 @@ body {
   font-size: 1.2em;
   user-select: none; /* Prevent text selection - KEEP this for tiles */
   transition: background-color 0.1s ease; /* Smooth hover effect */
+  flex-grow: 1;
 }
 
 /* Specific styles */
