@@ -45,6 +45,7 @@ body {
   display: flex;
   flex: 1;
   overflow-x: auto; /* Allow horizontal scrolling for columns */
+  scrollbar-color: #333 #000;
 }
 
 #letter-rows {
