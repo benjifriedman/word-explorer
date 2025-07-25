@@ -2,9 +2,15 @@
 
 const wordDisplay = document.getElementById('word-display');
 const letterRows = document.getElementById('letter-rows');
+const colorContainer = document.getElementById('color-container');
 
 let trie = {};
 let currentPath = []; // Stores the currently selected letters, e.g., ['a', 'p', 'p']
+
+colorContainer.addEventListener('click', (e) => {
+  const color = e.target.style.backgroundColor;
+  document.documentElement.style.setProperty('--selected-color', color);
+});
 
 // Load dictionary and build trie
 fetch('https://raw.githubusercontent.com/dwyl/english-words/master/words.txt')

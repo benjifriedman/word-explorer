@@ -1,5 +1,9 @@
 /* style.css */
 
+:root {
+  --selected-color: #ff8800;
+}
+
 body {
   margin: 0;
   font-family: sans-serif;
@@ -25,14 +29,14 @@ body {
 
 /* Style for the link inside word-display */
 #word-display a {
-    color: #0057ff; /* Blue color for links */
+    color: var(--selected-color); /* Blue color for links */
     text-decoration: none; /* No underline by default */
     cursor: pointer; /* Indicate it's clickable */
     transition: color 0.2s ease;
 }
 
 #word-display a:hover {
-    color: #0080ff; /* Slightly lighter blue on hover */
+    color: #ffffff;
     text-decoration: underline; /* Underline on hover */
 }
 
@@ -75,7 +79,7 @@ body {
 
 /* Specific styles */
 .letter-tile.selected {
-  background: #0057ff !important; /* Blue for selected */
+  background: var(--selected-color) !important; /* for selected */
 }
 
 .letter-tile:hover {
@@ -98,4 +102,21 @@ body {
   align-items: center;
   font-size: 2em;
   cursor: default; /* No pointer for dead ends */
+}
+
+#color-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+#color-container button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
 }
