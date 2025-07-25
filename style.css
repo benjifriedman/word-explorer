@@ -9,19 +9,20 @@ body {
   font-family: sans-serif;
   background: #000;
   color: white;
+  scrollbar-color: #333 #000;
 }
 
 #app {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  /* height: 100vh; */
   scrollbar-color: #333 #000;
 }
 
 #word-display {
   text-align: center;
   font-size: 2em;
-  padding: 1em;
+  padding: 0.5em;
   border-bottom: 1px solid #333;
   background: #111;
   /* user-select: none;  Removed to make text selectable */
@@ -42,10 +43,11 @@ body {
 
 
 #grid-container {
-  display: flex;
+  /* display: flex;
   flex: 1;
-  overflow-x: auto; /* Allow horizontal scrolling for columns */
-  scrollbar-color: #333 #000;
+  overflow-x: auto;
+  scrollbar-color: #333 #000; */
+  height: 100%; 
 }
 
 #letter-rows {
