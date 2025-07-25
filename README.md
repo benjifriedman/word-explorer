@@ -1,3 +1,5 @@
+GitHub pages instance at [https://benjifriedman.github.io/word-explorer/](https://benjifriedman.github.io/word-explorer/)
+
 # Word Explorer
 
 Word Explorer is an interactive web application that allows users to discover and build words from a dictionary in real-time. Starting with the first available letters, users can progressively select letters to form words, visualize valid continuations, and instantly look up completed words.
